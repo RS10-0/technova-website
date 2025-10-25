@@ -95,6 +95,7 @@ main {
   gap: 4rem;
 }
 
+/* Section styling */
 section {
   background: white;
   padding: 3rem 2rem;
@@ -111,8 +112,43 @@ section:hover {
 section h2 {
   font-size: 2.5rem;
   color: #1a91ff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
+  text-align: center;
+}
+
+/* --- Cards --- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #e6f8ff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #1a91ff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
 }
 
 /* --- Buttons --- */
@@ -163,6 +199,13 @@ footer .socials a:hover {
 }
 
 /* --- Responsive --- */
+@media screen and (max-width: 992px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header.hero h1 {
     font-size: 2.5rem;
