@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #e6f2ff; /* very light blue background */
+  background-color: #c6f0ff; /* exact shade from your image */
   color: #1a1a1a;
   line-height: 1.6;
 }
@@ -10,9 +10,12 @@ body {
 /* --- Header / Hero --- */
 header.hero {
   text-align: center;
-  background: linear-gradient(135deg, #80cfff, #3399ff); /* light to medium blue gradient */
-  color: white;
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #c6f0ff, #99e6ff);
+  color: #1a1a1a;
+  padding: 5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 header.hero h1 {
@@ -21,32 +24,44 @@ header.hero h1 {
 }
 
 header.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 
 header.hero .btn {
   display: inline-block;
-  background: white;
-  color: #3399ff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  background: #1a91ff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+header.hero .btn:hover {
+  background-color: #007acc;
 }
 
 /* --- Navigation --- */
 nav {
-  background-color: #3399ff;
+  background-color: #1a91ff;
   text-align: center;
   padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav a {
   color: white;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.05rem;
 }
 
 nav a:hover {
@@ -55,49 +70,57 @@ nav a:hover {
 
 /* --- Main Section --- */
 main {
-  padding: 2rem;
-  max-width: 900px;
+  padding: 3rem 2rem;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 section h2 {
-  color: #3399ff;
-  margin-bottom: 0.5rem;
+  color: #1a91ff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 /* --- Buttons --- */
 button, .btn {
-  background-color: #3399ff;
+  background-color: #1a91ff;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 button:hover, .btn:hover {
-  background-color: #007acc; /* slightly darker blue on hover */
+  background-color: #007acc;
 }
 
 /* --- Footer --- */
 footer {
-  background-color: #cce6ff; /* pale blue */
+  background-color: #99e6ff;
   text-align: center;
-  padding: 1rem;
-  color: #3399ff;
+  padding: 2rem 1rem;
+  color: #1a91ff;
   font-size: 0.9rem;
   margin-top: 4rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 footer .socials a {
-  color: #3399ff;
+  color: #1a91ff;
   text-decoration: none;
   margin: 0 0.5rem;
 }
